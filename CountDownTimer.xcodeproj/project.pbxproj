@@ -14,6 +14,12 @@
 		82ED8F102B47AFF30033E49A /* CountDownTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F0F2B47AFF30033E49A /* CountDownTimerTests.swift */; };
 		82ED8F1A2B47AFF30033E49A /* CountDownTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F192B47AFF30033E49A /* CountDownTimerUITests.swift */; };
 		82ED8F1C2B47AFF30033E49A /* CountDownTimerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F1B2B47AFF30033E49A /* CountDownTimerUITestsLaunchTests.swift */; };
+		82ED8F2A2B47B01F0033E49A /* CountDownTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F292B47B01F0033E49A /* CountDownTimerView.swift */; };
+		82ED8F2C2B47B0680033E49A /* CountDownTimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F2B2B47B0680033E49A /* CountDownTimerViewModel.swift */; };
+		82ED8F2E2B47B7200033E49A /* EndTimePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F2D2B47B7200033E49A /* EndTimePickerView.swift */; };
+		82ED8F302B47BAD90033E49A /* EndTimePickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F2F2B47BAD90033E49A /* EndTimePickerViewModel.swift */; };
+		82ED8F332B47D54A0033E49A /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F322B47D54A0033E49A /* HomeScreen.swift */; };
+		82ED8F352B4A40230033E49A /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82ED8F342B4A40230033E49A /* InitialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,12 @@
 		82ED8F152B47AFF30033E49A /* CountDownTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountDownTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82ED8F192B47AFF30033E49A /* CountDownTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerUITests.swift; sourceTree = "<group>"; };
 		82ED8F1B2B47AFF30033E49A /* CountDownTimerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82ED8F292B47B01F0033E49A /* CountDownTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerView.swift; sourceTree = "<group>"; };
+		82ED8F2B2B47B0680033E49A /* CountDownTimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountDownTimerViewModel.swift; sourceTree = "<group>"; };
+		82ED8F2D2B47B7200033E49A /* EndTimePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTimePickerView.swift; sourceTree = "<group>"; };
+		82ED8F2F2B47BAD90033E49A /* EndTimePickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndTimePickerViewModel.swift; sourceTree = "<group>"; };
+		82ED8F322B47D54A0033E49A /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		82ED8F342B4A40230033E49A /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +106,8 @@
 		82ED8EFD2B47AFF20033E49A /* CountDownTimer */ = {
 			isa = PBXGroup;
 			children = (
+				82ED8F312B47D53A0033E49A /* Screen */,
+				82ED8F282B47B0080033E49A /* View */,
 				82ED8EFE2B47AFF20033E49A /* CountDownTimerApp.swift */,
 				82ED8F002B47AFF20033E49A /* ContentView.swift */,
 				82ED8F022B47AFF30033E49A /* Assets.xcassets */,
@@ -125,6 +139,26 @@
 				82ED8F1B2B47AFF30033E49A /* CountDownTimerUITestsLaunchTests.swift */,
 			);
 			path = CountDownTimerUITests;
+			sourceTree = "<group>";
+		};
+		82ED8F282B47B0080033E49A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				82ED8F292B47B01F0033E49A /* CountDownTimerView.swift */,
+				82ED8F2B2B47B0680033E49A /* CountDownTimerViewModel.swift */,
+				82ED8F2D2B47B7200033E49A /* EndTimePickerView.swift */,
+				82ED8F2F2B47BAD90033E49A /* EndTimePickerViewModel.swift */,
+				82ED8F342B4A40230033E49A /* InitialView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		82ED8F312B47D53A0033E49A /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				82ED8F322B47D54A0033E49A /* HomeScreen.swift */,
+			);
+			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82ED8F2A2B47B01F0033E49A /* CountDownTimerView.swift in Sources */,
+				82ED8F352B4A40230033E49A /* InitialView.swift in Sources */,
 				82ED8F012B47AFF20033E49A /* ContentView.swift in Sources */,
+				82ED8F332B47D54A0033E49A /* HomeScreen.swift in Sources */,
+				82ED8F2C2B47B0680033E49A /* CountDownTimerViewModel.swift in Sources */,
+				82ED8F2E2B47B7200033E49A /* EndTimePickerView.swift in Sources */,
 				82ED8EFF2B47AFF20033E49A /* CountDownTimerApp.swift in Sources */,
+				82ED8F302B47BAD90033E49A /* EndTimePickerViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
